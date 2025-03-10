@@ -44,6 +44,54 @@
             justify-content: center; 
             width: 100%; 
         }
+
+        
+        .project-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 3%;
+            
+            
+        }
+        .project-item img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            border-radius: 3%;
+        }
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(248,249,250, 0.9);
+          
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .project-item:hover .project-overlay {
+            opacity: 1;
+        }
+        .project-details {
+            text-align: center;
+            padding: 20px;
+        }
+        .project-link {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+       
     </style>
 
 </head>
@@ -82,14 +130,14 @@
 
           <div class="container row gap-5">
             <div class="col mx-4" style="text-align: justify;">
-              <h2 class="mb-4">Get to Know Me</h2>
+              <h2 class="mb-4 display-6">Get to Know Me</h2>
               
               <p>IIIT Pune graduate, Software Engineer, and Java Full-Stack Developer at Accenture, I bring a unique blend of practical experience and a strong academic foundation to the table. My six-month Machine Learning Engineering internship, focused on real-world AI applications, complements my full-stack expertise, fueling my drive to create intelligent, integrated solutions. I'm particularly interested in opportunities that allow me to synthesize these skills. Beyond coding, my analytical and strategic thinking is honed by a 1800 ELO rating on Chess.com, placing me in the top 1% of players. This demonstrates a proven ability to tackle complex problems and think several steps ahead. I'm seeking a role where I can contribute meaningfully, learn continuously, and leverage my diverse skills to drive innovation. If you're looking for a driven engineer with a passion for both technology and strategic problem-solving, I'm eager to connect.</p>
             </div>
 
             <div class="col ">
-              <h2 class="mb-4">Skills</h2>
-
+              
+              <h2 class="mb-2 display-6">Skills</h2>
               <div class="skills-container">
                 <div>
                   <button class="skill-button">Java</button>
@@ -120,9 +168,65 @@
         </div>
 
 
-        <div id="projects" class="min-vh-100 d-flex align-items-center justify-content-center bg-light">
-          <h2 class="display-5">Projects</h2>
+        <div id="projects" class="min-vh-100 d-flex flex-column align-items-center justify-content-center bg-light">
+          <h2 class="display-5 mb-4">Projects</h2>
+
+          <div class="container row">
+
+            <div class="row row-cols-1 row-cols-xl-2 g-5">
+              
+              <div class="col project-item ">
+                <img src="wallpaperflare.itachi.jpg" alt="">
+                <div class="project-overlay">
+                    <div class="project-details">
+                        <h4>Wedler Engineering</h4>
+                        <p>Specialized engineering services.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col project-item ">
+                <img src="wallpaperflare.itachi.jpg" alt="">
+                <div class="project-overlay">
+                    <div class="project-details">
+                        <h4>Wedler Engineering</h4>
+                        <p>Specialized engineering services.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col project-item">
+                <img src="wallpaperflare.itachi.jpg" alt="">
+                <div class="project-overlay">
+                    <div class="project-details">
+                        <h4>Wedler Engineering</h4>
+                        <p>Specialized engineering services.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col project-item ">
+                <img src="wallpaperflare.itachi.jpg" alt="">
+                <div class="project-overlay">
+                    <div class="project-details">
+                        <h4>Wedler Engineering</h4>
+                        <p>Specialized engineering services.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+              </div>
+            
+            </div>
+            
+
+          </div>
+            
+            
+       
+
         </div>
+
+
         <div id="contact" class="min-vh-100 d-flex align-items-center justify-content-center bg-white">
           <h2 class="display-5">Contact Me</h2>
         </div>
